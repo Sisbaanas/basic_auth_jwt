@@ -1,15 +1,22 @@
 package basic_auth_jwt;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @RestController
-@RequestMapping("/Accueil")
+@RequestMapping("/utils")
 public class Controller {
-    @PostMapping("/gimme")
-    public String hello()
+    @GetMapping("/gimme")
+    public List<String> hello()
     {
-        return " welcome ! ";
+        List<String> a = new ArrayList<>();
+        a.add("Holla !!!");
+        a.add("welcome !!!");
+        return a;
     }
 }
