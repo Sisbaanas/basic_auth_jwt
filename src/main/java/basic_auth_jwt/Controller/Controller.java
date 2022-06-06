@@ -1,4 +1,4 @@
-package basic_auth_jwt;
+package basic_auth_jwt.Controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
